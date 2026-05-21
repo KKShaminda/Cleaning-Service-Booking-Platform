@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const Booking = require('../models/booking');
+const Booking = require('../models/Booking');
 const auth = require('../middleware/auth');
 
 // POST — customer submits a booking (requires login)

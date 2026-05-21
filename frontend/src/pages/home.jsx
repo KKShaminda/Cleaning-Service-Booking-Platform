@@ -74,7 +74,7 @@ export default function Home() {
                     <h3 className="font-bold text-gray-800">{s.name}</h3>
                     <p className="text-gray-500 text-sm mt-1 mb-3 line-clamp-2">{s.description}</p>
                     <div className="flex items-center justify-between">
-                      <span className="text-teal-700 font-bold">${s.price}</span>
+                      <span className="text-teal-700 font-bold">RS.{s.price}</span>
                       <Link to={`/booking?service=${encodeURIComponent(s.name)}`}
                         className="text-xs bg-teal-600 text-white px-3 py-1 rounded-full hover:bg-teal-700">
                         Book
@@ -124,12 +124,19 @@ export default function Home() {
             <p className="text-gray-300 text-sm mb-1">✉️ hello@sparkleclean.lk</p>
             <p className="text-gray-300 text-sm mb-4">📞 +94 77 123 4567</p>
             <a
-              href=""
+              href="https://wa.me/94771234567?text=Hi!%20I'd%20like%20to%20book%20a%20cleaning."
               target="_blank" rel="noopener noreferrer"
               className="inline-block bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full text-sm font-semibold"
             >
               💬 WhatsApp Us
             </a>
+          </div>
+          <div>
+            <iframe
+              title="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63303.93228693985!2d79.8399!3d7.2081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2ee9031f8e079%3A0x6e7c2e4a05636b4!2sNegombo!5e0!3m2!1sen!2slk"
+              width="100%" height="180" className="rounded-xl border-0" loading="lazy"
+            />
           </div>
         </div>
         <p className="text-center text-gray-500 text-xs mt-10">© {new Date().getFullYear()} SparkleClean. All rights reserved.</p>
